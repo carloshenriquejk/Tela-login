@@ -1,0 +1,100 @@
+unit Ulogin;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  Tformlogin = class(TForm)
+    pnlPrincipal: TPanel;
+    btnFechar: TSpeedButton;
+    Shape1: TShape;
+    pnlImagem: TPanel;
+    imgLeft: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    imgLogo: TImage;
+    pnlUsuario: TPanel;
+    Label4: TLabel;
+    edtNomedoUsuario: TEdit;
+    Panel1: TPanel;
+    Label6: TLabel;
+    edSenha: TEdit;
+    Edit3: TEdit;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    SpeedButton1: TSpeedButton;
+    Panel10: TPanel;
+    SpeedButton7: TSpeedButton;
+    Panel5: TPanel;
+    Label7: TLabel;
+    Edit1: TEdit;
+    Panel6: TPanel;
+    CheckBox1: TCheckBox;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnFecharClick(Sender: TObject);
+    procedure FormResize(Sender: TObject);
+    procedure SpeedButton7Click(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  formlogin: Tformlogin;
+
+implementation
+
+{$R *.dfm}
+
+uses UMain;
+
+procedure Tformlogin.btnFecharClick(Sender: TObject);
+begin
+Application.Terminate;
+end;
+
+procedure Tformlogin.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+ Action := cafree;
+end;
+
+procedure Tformlogin.FormCreate(Sender: TObject);
+begin
+KeyPreview := True;
+end;
+
+procedure Tformlogin.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+ if (Key = VK_ESCAPE) then
+    Close;
+end;
+
+procedure Tformlogin.FormResize(Sender: TObject);
+begin
+ pnlPrincipal.Top := Round(formlogin.Height /2 - pnlPrincipal.Height / 2 ) ;
+  pnlPrincipal.Left := Round(formlogin.Width /2 - pnlPrincipal.Width / 2 ) ;
+end;
+
+procedure Tformlogin.SpeedButton1Click(Sender: TObject);
+begin
+Application.CreateForm(TFmain,Fmain);
+Fmain.ShowModal;
+end;
+
+procedure Tformlogin.SpeedButton7Click(Sender: TObject);
+begin
+Application.Terminate;
+end;
+
+end.

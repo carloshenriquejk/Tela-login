@@ -1,0 +1,31 @@
+unit UMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons;
+
+type
+  TFmain = class(TForm)
+    btnFechar: TSpeedButton;
+    procedure btnFecharClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Fmain: TFmain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFmain.btnFecharClick(Sender: TObject);
+begin
+Application.Terminate
+end;
+
+end.

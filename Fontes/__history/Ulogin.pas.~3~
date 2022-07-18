@@ -1,0 +1,62 @@
+unit Ulogin;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  Tformlogin = class(TForm)
+    pnlPrincipal: TPanel;
+    btnFechar: TSpeedButton;
+    Shape1: TShape;
+    pnlImagem: TPanel;
+    imgLeft: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    imgLogo: TImage;
+    pnlUsuario: TPanel;
+    Label4: TLabel;
+    edtNomedoUsuario: TEdit;
+    Label5: TLabel;
+    Panel1: TPanel;
+    Label6: TLabel;
+    edSenha: TEdit;
+    Edit3: TEdit;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnFecharClick(Sender: TObject);
+    procedure FormResize(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  formlogin: Tformlogin;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tformlogin.btnFecharClick(Sender: TObject);
+begin
+Application.Terminate;
+end;
+
+procedure Tformlogin.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+ Action := cafree;
+end;
+
+procedure Tformlogin.FormResize(Sender: TObject);
+begin
+ pnlPrincipal.Top := Round(formlogin.Height /2 - pnlPrincipal.Height / 2 ) ;
+  pnlPrincipal.Left := Round(formlogin.Width /2 - pnlPrincipal.Width / 2 ) ;
+end;
+
+end.

@@ -1,0 +1,450 @@
+object formlogin: Tformlogin
+  Left = 0
+  Top = 0
+  Align = alClient
+  BorderStyle = bsNone
+  Caption = 'formlogin'
+  ClientHeight = 631
+  ClientWidth = 945
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 456
+    Top = 312
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object pnlPrincipal: TPanel
+    Left = 29
+    Top = 8
+    Width = 844
+    Height = 545
+    Align = alCustom
+    Anchors = [akTop, akRight]
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    DesignSize = (
+      844
+      545)
+    object Shape1: TShape
+      Left = 0
+      Top = 0
+      Width = 844
+      Height = 545
+      Align = alClient
+      Pen.Color = clSilver
+      ExplicitLeft = 64
+      ExplicitTop = -88
+    end
+    object btnFechar: TSpeedButton
+      Left = 800
+      Top = 8
+      Width = 36
+      Height = 25
+      Cursor = crHandPoint
+      Anchors = [akTop, akRight]
+      Caption = 'X'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clGray
+      Font.Height = -24
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      Transparent = False
+      OnClick = btnFecharClick
+    end
+    object pnlImagem: TPanel
+      Left = 0
+      Top = 0
+      Width = 369
+      Height = 545
+      BevelOuter = bvNone
+      Color = 376059
+      ParentBackground = False
+      TabOrder = 0
+      object imgLeft: TImage
+        Left = 0
+        Top = 0
+        Width = 369
+        Height = 545
+        Align = alClient
+        ExplicitLeft = 42
+        ExplicitTop = 16
+      end
+      object Label2: TLabel
+        Left = 48
+        Top = 72
+        Width = 173
+        Height = 45
+        Caption = 'Sistema ERP'
+        Color = clCream
+        Font.Charset = GREEK_CHARSET
+        Font.Color = clWhite
+        Font.Height = -32
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 48
+        Top = 175
+        Width = 240
+        Height = 50
+        Caption = 'Digite Usuario e Senha para acessar nosso Sistema '
+        Color = clCream
+        Font.Charset = GREEK_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+      end
+      object imgLogo: TImage
+        Left = 141
+        Top = 376
+        Width = 64
+        Height = 64
+        Align = alCustom
+        AutoSize = True
+        Center = True
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000400000
+          00400806000000AA6971DE000000097048597300000B1300000B1301009A9C18
+          000006154944415478DAED5B69A8555514DED7ACAC7C3691652A69F85269107F
+          5861343850695ABECA8452122BB341B16760D0F4948C0C9C72C88A34E8A91845
+          5A9951A0FE880AC546233549B1B4ACA4F4198DF6FA3ECEBEB4EE7E7738C33A77
+          9F276EF858B8CEBB6BF8CED97BAFB3F63167AA349A9B9B8F8718000C072E00CE
+          04BAD8CBDF02FB802DC09BC0FA5C2EF75735E2CA5521F14E108F01B7021D42FE
+          EC20B00C980E227E68950420F176108F00938193629AF90D980D3C0922FE6835
+          04D8BBFE3A708992C98F80BA349E067502907C1F883540E7229739D757D9EBBB
+          80EFAC9E6B413760187003D0B5C86FF9B74341C217992500C99F05B1C9FCBFB8
+          E5C71E603AB00409FC53C1461B889B80A72D2972EC052E868D3D992300819F00
+          B181013A9778C7C720E84311EDD5403402D73B97381D0668AD099A043C01F1B0
+          A39E07D423D87F63DAE4D3301798E85CE2EEF0786608B08BDED7A670B55F0DDC
+          18377987042EA8F249E0EE500BDBDF678580672126081517ACDE511FFB32F639
+          1DB602670BF522D8BFCF3B01B6C2FBD1141639E310DC528DE4859FBB209E17AA
+          0340C7A415A30601D742AC152A6E75DD11D8616502DA42EC34853BCC35F0F3AE
+          6F021641DC2354F311D424CDE485AF8510F70AD542F8BADF3701EB21AE12AA21
+          08EA9D9408186A82222A3FF8D234D03701DB216A858AABF38E9408E86982C530
+          3FB6C1572FDF043441B417AA1AADD5BF882FFA6912AA43F055E39B00BEBACA20
+          3A20A8A6B8F62AF8E24E7340A80EC2D7C9BE09D806719E50F54450DB5322808F
+          FB5742B515BE7AFB26C05D04F9C6B636A6B94ABEDC45701D7C0DF24D80BB352D
+          405013E3DAABB6AF340A2196C1DD2BBDF6C6F0C342689729EC335C0D3FEFF926
+          E038889F4C61293C1E81BDA04CC0DD108B852A1BA5B00DCE7D1962E3A297D66E
+          60577FEEFF9D843A7115A849404708163F723B6435382CE93B817D1D665365B8
+          50B3CEA8D5E8116A3644D8F27AD451CF0726276C883C03B8AFBD0DB0394D236E
+          4D02D806E79678A97389071DB7459D0EF6B15F0E5CE75CFA0018087B7F668A00
+          1B349BA21B4DCBAE2E17C9192698B7619AA2A381A74CE19CE7E0DAD20F36F66A
+          C59C465BFC4288B74DCBCE3007BBB96C95BD6582777BD9163FD7046D71B6BE4A
+          B5D459646DD18C37AD839133205E05AE5032F9A109FA8BD93F181124703AB016
+          18021C13D30C771096BE6391FC2F69C499C6143815E241805DA1F609CDE5C7AF
+          C04BC00C10F1732609B0A52A139F0A9CA219A4187C0AB8D52ED6EA396A1542DD
+          4C709CDDBFCC9FF1C86C03F029C0F33DCE6796B1DC1EF9AD005BDEE700970357
+          023C636C53C2D6C7C04890F08D770290FC0808B6C08BDD756E57ACDF57446D93
+          C12E7786F1C09DA6E576C8B11FB80576D7792300418EB1C9BB8B1CE7E94C13EC
+          FBBF27F471AC092AC106C0EDFEB0A6E80F1F9BAA4E00021B678255DE7D4CB9CF
+          DF81A0F62749BC883F4E139E358E12EAC42DF85804201896A76F38C9FF0D3C60
+          8223AB66CDE41DDF534CF074BD6C8213A844BE22136017BCCDC06942CDC56C14
+          82599556E24E0C3C82DFACB1134422C0363FDE07FA0935EF3C3F5F5913C55656
+          465402EA2166396ABEEECEF39D48EA04D80A8FDF009C2ED45CF0EAD29CF37107
+          E23D1F717DA949C01C137CF2961FACCA6AB5577BA5E4479AA097300BF13D9498
+          007B24C5A246B6BCA6C0F86CDFC99649BEAD55CD2C47425802B8E7BF2854BB4D
+          70F7ABF2396B84E45923348AE439582CF52DD547084B0057FECB846A1A0C36F8
+          4ED889D1BDF31CDC266F47ACCB4AFDAE2201B6B9B14FFC2D1B9C3D6074A7EFA4
+          93261F9600B6A8560BD54618D5FA04D66BF26109607372AA50CD81E17ADF896B
+          241F96009EBD0D162A96BCAFA49C58C53DBCCC82371ABF5D19D65718023E83B8
+          48A8FAC0C1E72926DF6082CFECD9076C2CF13789EF7C1402D8CA961F2876D1FC
+          58B948F2F94F600F17234133F9B004B0A1D14EA84E4CDAE428E187FF8DE61353
+          E691D67AECA3125050E7C3519AADF49B2156989677772CC0A330B53B9F4902AC
+          BF5277D918C53B9F5902CA9020874AF29925A002096AC9679A00EBDB5D1312CF
+          F9564580F55F07B1C0FE7312DCBFA6693FF304A43D8E12109580D403AA32C147
+          090841003F63E91CC2D6114B00BFDB79CE14BE101D3104FC074CF7855F68A4C2
+          D00000000049454E44AE426082}
+      end
+    end
+    object pnlUsuario: TPanel
+      Left = 408
+      Top = 73
+      Width = 300
+      Height = 62
+      BevelOuter = bvNone
+      TabOrder = 1
+      object Label4: TLabel
+        Left = 0
+        Top = 14
+        Width = 110
+        Height = 13
+        Caption = 'NOME DO USUARIO :'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clSilver
+        Font.Height = -11
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+      end
+      object edtNomedoUsuario: TEdit
+        Left = 8
+        Top = 115
+        Width = 345
+        Height = 33
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        BorderStyle = bsNone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clSilver
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        TextHint = 'Digite o Nome do Usuario'
+      end
+      object Edit3: TEdit
+        Left = 1
+        Top = 41
+        Width = 344
+        Height = 22
+        TabStop = False
+        Align = alCustom
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        BorderStyle = bsNone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = 14079702
+        Font.Height = -13
+        Font.Name = 'Arial Narrow'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+        TextHint = 'Digite o Nome de Usuario'
+      end
+      object Panel2: TPanel
+        Left = 0
+        Top = 61
+        Width = 300
+        Height = 1
+        Align = alBottom
+        Color = clSilver
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clSilver
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentBackground = False
+        ParentFont = False
+        TabOrder = 2
+        ExplicitTop = 13
+        ExplicitWidth = 369
+      end
+    end
+    object Panel1: TPanel
+      Left = 416
+      Top = 279
+      Width = 300
+      Height = 63
+      BevelOuter = bvNone
+      TabOrder = 2
+      object Label6: TLabel
+        Left = 0
+        Top = 6
+        Width = 38
+        Height = 13
+        Caption = 'SENHA:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clSilver
+        Font.Height = -11
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+      end
+      object edSenha: TEdit
+        Left = 1
+        Top = 34
+        Width = 344
+        Height = 30
+        TabStop = False
+        Align = alCustom
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        BorderStyle = bsNone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = 14079702
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        PasswordChar = '*'
+        TabOrder = 0
+        TextHint = 'Digite a Senha'
+      end
+      object Panel3: TPanel
+        Left = 0
+        Top = 62
+        Width = 300
+        Height = 1
+        Align = alBottom
+        Color = clSilver
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clSilver
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentBackground = False
+        ParentFont = False
+        TabOrder = 1
+        ExplicitTop = 13
+        ExplicitWidth = 369
+      end
+    end
+    object Panel4: TPanel
+      Left = 428
+      Top = 448
+      Width = 109
+      Height = 33
+      Align = alCustom
+      BevelOuter = bvNone
+      Caption = 'Entrar'
+      Color = 4227072
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 3
+      object SpeedButton1: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 109
+        Height = 33
+        Align = alClient
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitLeft = 16
+        ExplicitWidth = 120
+      end
+    end
+    object Panel10: TPanel
+      Left = 584
+      Top = 448
+      Width = 124
+      Height = 33
+      Align = alCustom
+      BevelOuter = bvNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 4
+      object SpeedButton7: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 124
+        Height = 33
+        Align = alClient
+        Caption = 'cancelar'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clSilver
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        OnClick = SpeedButton7Click
+        ExplicitTop = -8
+        ExplicitWidth = 118
+        ExplicitHeight = 49
+      end
+    end
+    object Panel5: TPanel
+      Left = 416
+      Top = 183
+      Width = 300
+      Height = 63
+      BevelOuter = bvNone
+      TabOrder = 5
+      object Label7: TLabel
+        Left = 0
+        Top = 9
+        Width = 35
+        Height = 13
+        Caption = 'E_mail:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clSilver
+        Font.Height = -11
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Edit1: TEdit
+        Left = 1
+        Top = 28
+        Width = 344
+        Height = 30
+        TabStop = False
+        Align = alCustom
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        BorderStyle = bsNone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = 14079702
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        PasswordChar = '*'
+        TabOrder = 0
+        TextHint = 'Digite seu e-mail'
+      end
+      object Panel6: TPanel
+        Left = 0
+        Top = 62
+        Width = 300
+        Height = 1
+        Align = alBottom
+        Color = clSilver
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clSilver
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentBackground = False
+        ParentFont = False
+        TabOrder = 1
+      end
+    end
+    object CheckBox1: TCheckBox
+      Left = 428
+      Top = 399
+      Width = 280
+      Height = 17
+      Caption = 'Ao entrar voc'#234' concorda com todos odstermos do ERP'
+      TabOrder = 6
+    end
+  end
+end

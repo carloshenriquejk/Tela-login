@@ -1,0 +1,38 @@
+object Fmain: TFmain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  ClientHeight = 500
+  ClientWidth = 848
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  DesignSize = (
+    848
+    500)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnFechar: TSpeedButton
+    Left = 800
+    Top = 8
+    Width = 36
+    Height = 25
+    Cursor = crHandPoint
+    Anchors = [akTop, akRight]
+    Caption = 'X'
+    Flat = True
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clGray
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    Transparent = False
+    OnClick = btnFecharClick
+  end
+end

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{00BB0A00-5596-454F-BE37-AC43AC44B51B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="loginVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\escolaCad\EscolaModelo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="loginVCL">
+        <MSBuild Projects="loginVCL.dproj"/>
+    </Target>
+    <Target Name="loginVCL:Clean">
+        <MSBuild Projects="loginVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="loginVCL:Make">
+        <MSBuild Projects="loginVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EscolaModelo">
+        <MSBuild Projects="..\escolaCad\EscolaModelo.dproj"/>
+    </Target>
+    <Target Name="EscolaModelo:Clean">
+        <MSBuild Projects="..\escolaCad\EscolaModelo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EscolaModelo:Make">
+        <MSBuild Projects="..\escolaCad\EscolaModelo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="loginVCL;EscolaModelo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="loginVCL:Clean;EscolaModelo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="loginVCL:Make;EscolaModelo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
